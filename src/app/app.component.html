@@ -1,3 +1,11 @@
-<h1>
+  {{today | date : "dd/MMM/yyyy hh:mm a"}}
+<h1 style="color:white" myHighlight>
   {{title}}
 </h1>
+
+<p> This one has no highlight</p>
+<p myHighlight> Hello Hello</p>
+
+<a routerLink="/stocks">Stocks</a>
+
+<router-outlet> </router-outlet>
