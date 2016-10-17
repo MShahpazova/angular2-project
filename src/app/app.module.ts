@@ -13,24 +13,28 @@ import {routing} from './app.routing';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {CurrencyService} from './currency.service';
 import { BondsDirective } from './bonds.directive';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbAlertConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     MutualfundsComponent,
     StocksComponent,
-    HighlightDirective,
+    HighlightDirective, 
     DateFormatterPipe,
     DashboardComponent,
-    BondsDirective
+    BondsDirective,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    NgbModule
+    
   ],
-  providers: [StocksService, CurrencyService],
+  providers: [StocksService, CurrencyService, NgbAlertConfig],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
