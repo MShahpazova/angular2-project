@@ -9,7 +9,7 @@ import {Component} from '@angular/core';
     <li *ngFor='let stock of stocks'>
         {{stock}}
     </li>
-    </ul>`
+    </ul>`,
 })
 
 export class StocksComponent{
